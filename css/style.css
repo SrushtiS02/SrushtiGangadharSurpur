@@ -1146,6 +1146,19 @@ h6 {
   color: var(--ocean);
 }
 
+.profile-card-icon.qr {
+  background: #fff;
+  border: 1.5px solid var(--sky-light);
+  padding: 4px;
+  overflow: hidden;
+}
+
+.profile-card-icon.qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .profile-card h4 {
   font-size: 1rem;
   font-weight: 600;

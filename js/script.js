@@ -85,12 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 const card = document.createElement('div');
                 card.className = 'pub-card reveal';
                 card.innerHTML = `
-          <a href="${pub.link}" class="pub-card-title" target="_blank" rel="noopener">${pub.title}</a>
+          ${pub.link ? `<a href="${pub.link}" class="pub-card-title" target="_blank" rel="noopener">${pub.title}</a>` : `<span class="pub-card-title is-soon">${pub.title}</span>`}
           <p class="pub-card-authors">${pub.authors.join(', ')}</p>
           <div class="pub-card-meta">
             <span class="pub-venue">${pub.venue}</span>
             <span class="pub-year">${pub.year}</span>
             ${pub.citations > 0 ? `<span class="pub-citations">Cited by ${pub.citations}</span>` : ''}
+            ${pub.status ? `<span class="pub-status">${pub.status}</span>` : ''}
           </div>
         `;
                 pubList.appendChild(card);

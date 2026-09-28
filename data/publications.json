@@ -1,26 +1,63 @@
 [
   {
-    "title": "A Review on Key Algorithms for Pneumonia Detection in X-ray Images",
+    "title": "Capability-Aware Scalable Multi-Snake Distributed Learning for Heterogeneous 6G Edge Networks",
     "authors": [
       "S. G. Surpur",
-      "G. J. Chhajed"
+      "P. Marantis",
+      "K. Ramantas",
+      "C. Verikoukis"
     ],
-    "venue": "International Journal / Conference",
-    "year": 2023,
+    "venue": "IEEE GLOBECOM 2026 · Macau",
+    "year": 2026,
+    "citations": 0,
+    "link": "",
+    "type": "conference",
+    "status": "Accepted"
+  },
+  {
+    "title": "Capability-Aware Distributed Learning and Inference for Heterogeneous 6G Edge Environments",
+    "authors": [
+      "S. G. Surpur",
+      "P. Marantis",
+      "K. Ramantas",
+      "C. Verikoukis"
+    ],
+    "venue": "IEEE CloudNet 2026",
+    "year": 2026,
+    "citations": 0,
+    "link": "",
+    "type": "conference",
+    "status": "Accepted"
+  },
+  {
+    "title": "A Review on Key Algorithms for Pneumonia Detection in X-ray Images",
+    "authors": [
+      "G. J. Chhajed",
+      "S. G. Surpur",
+      "A. Suryawanshi",
+      "H. Sherekar"
+    ],
+    "venue": "Conference paper",
+    "year": 2024,
     "citations": 1,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vP-rypcAAAAJ&citation_for_view=vP-rypcAAAAJ:u-x6o8ySG0sC",
-    "type": "journal"
+    "type": "conference",
+    "status": "Published"
   },
   {
     "title": "Enhancing the Skills of Visually Impaired Individuals by Generating Open-Source Engine Using Machine Learning",
     "authors": [
+      "B. Garg",
+      "G. J. Chhajed",
       "S. G. Surpur",
-      "G. J. Chhajed"
+      "H. Sherekar",
+      "et al."
     ],
-    "venue": "International Journal / Conference",
-    "year": 2023,
+    "venue": "Book chapter",
+    "year": 2024,
     "citations": 2,
     "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vP-rypcAAAAJ&citation_for_view=vP-rypcAAAAJ:u5HHmVD_uO8C",
-    "type": "journal"
+    "type": "chapter",
+    "status": "Published"
   }
 ]

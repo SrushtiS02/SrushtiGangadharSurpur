@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const citeCountEl = document.getElementById('cite-count');
 
         try {
-            const res = await fetch('data/publications.json');
+            const res = await fetch('data/publications.json', { cache: 'no-cache' });
             const pubs = await res.json();
 
             let totalCitations = 0;

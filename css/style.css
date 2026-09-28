@@ -213,7 +213,18 @@ h6 {
   font-size: 1.3rem;
   color: var(--ocean-deep);
   letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
 }
+
+.nav-doodle {
+  width: 40px;
+  height: auto;
+  display: block;
+  transition: transform var(--dur) var(--ease);
+}
+
+.nav-logo:hover .nav-doodle { transform: rotate(-6deg) scale(1.08); }
 
 .nav-logo span {
   background: var(--grad-sky);

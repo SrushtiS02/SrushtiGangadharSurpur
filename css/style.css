@@ -1514,6 +1514,53 @@ a.moment-card {
   background: var(--cloud-alt);
 }
 
+/* Stacked-page look: two sheets drawn as layered box-shadows (the card's
+   overflow:hidden would clip pseudo-elements). Each sheet is a white fill
+   inset by 1px over a --cloud-alt edge, so it reads as a thin paper outline. */
+.interludes {
+  --sheet-rest:
+    5px 5px 0 -1px var(--white), 5px 5px 0 0 var(--cloud-alt),
+    10px 10px 0 -2px var(--white), 10px 10px 0 -1px var(--cloud-alt),
+    0 4px 14px rgba(2, 48, 71, 0.05);
+  /* Lifted: the card rises 4px and the sheets shift 4px further down, so they
+     stay put on the page and more of each one shows */
+  --sheet-lift:
+    7px 9px 0 -1px var(--white), 7px 9px 0 0 var(--cloud-alt),
+    13px 16px 0 -2px var(--white), 13px 16px 0 -1px var(--cloud-alt),
+    0 14px 30px rgba(2, 48, 71, 0.10);
+}
+
+/* Room inside the scrolling row so the sheets, lift and focus ring aren't clipped */
+.interludes .moments-grid.moments-row {
+  padding: 12px 20px 28px 6px;
+}
+
+.interludes .moment-card {
+  box-shadow: var(--sheet-rest);
+}
+
+/* Moments' shared hover (lift, big shadow, photo zoom) is replaced here */
+.interludes .moment-card:hover {
+  transform: none;
+  box-shadow: var(--sheet-rest);
+}
+
+.interludes .moment-card:hover .moment-card-img {
+  transform: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .interludes .moment-card:hover {
+    transform: translate(-2px, -4px);
+    box-shadow: var(--sheet-lift);
+  }
+}
+
+.interludes .moment-card:focus-visible {
+  outline: 2px solid var(--ocean);
+  outline-offset: 4px;
+}
+
 /* =========================================
    Interlude story pages
    ========================================= */
